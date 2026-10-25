@@ -1,0 +1,37 @@
+/* Estilo aplicado à página inteira */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+    text-align: left;
+}
+/* Seletor por tag */
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+h2 {
+    color: red;
+}
+p{
+    color: darkmagenta;
+}
+/* Seletor por classe */
+.introducao {
+    text-align: center;
+    font-size: 18px;
+}
+.destaque {
+    font-size: 22px;
+    color: green;
+}
+/* Seletor por ID */
+#estudos {
+    background-color: white;
+}
+#rodape-principal {
+    border-top: 2px solid #ccc;
+}
+#foto-perfil {
+    border-radius: 10%;
+}

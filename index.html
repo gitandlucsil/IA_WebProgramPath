@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Meu aprendizado</title>
+        <!-- Conecta o HTML ao arquivo CSS -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <!-- Título principal da página -->
             <h1>Meu aprendizado de programação</h1>
+            <p class="introducao">Minha jornada na programação web.</p>
             <!--nav é uma área de navegação com link -->
             <nav>
                 <ul>
@@ -22,9 +25,10 @@
         <!-- Conteúdo principal -->
         <main>
             <!-- Primeira seção -->
-             <section>
+             <section id="estudos">
                 <h2 id="html">HTML</h2>
-                <p>Estou aprendendo web.</p>
+                    <h2>O que estou aprendendo</h2>
+                    <p>HTML, CSS e JavaScript.</p>
              </section>
 
             <!-- Exemplo de div usada apenas para criar um container de layout -->
@@ -33,15 +37,15 @@
             </div>
             <!-- Subseção de HTML -->
             <h3>Elementos básicos</h3>
-            <p>Podemos criar <strong>títulos</strong>, <em>parágrafos</em> e links.</p>
+            <p class="destaque">Podemos criar <strong>títulos</strong>, <em>parágrafos</em> e links.</p>
 
             <!-- Segunda seção -->
             <h2 id="objetivos">Meus objetivos</h2>
             <p>Quero aprender a desenvolver sites completos.</p>
 
             <h2>Minhas tecnologias de Interesse</h2>
-            <ul>
-                <li>Programação embarcada</li>
+            <ul class="destaque">
+                <li >Programação embarcada</li>
                 <li>Programação web</li>
                 <li>Programação Android</li>
             </ul>
@@ -54,11 +58,11 @@
 
             <!-- Imagem com descrição alternativa -->
             <h2>Imagem</h2>
-            <p><img id="imagem" src="imagens/images.jpeg"
+            <p><img id="foto-perfil" src="imagens/images.jpeg"
                 alt="Codigo fonte"></p>
         </main>
         <!-- Rodapé -->
-         <footer>
+         <footer id="rodape-principal">
             <h2>Navegar para contato</h2>
             <a href="contato.html">Meu contato</a>
          </footer>
