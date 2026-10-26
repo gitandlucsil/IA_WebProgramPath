@@ -1,9 +1,13 @@
 /* Estilo aplicado à página inteira */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333333;
     text-align: left;
+    margin: 20px
 }
 /* Seletor por tag */
 h1 {
@@ -34,4 +38,13 @@ p{
 }
 #foto-perfil {
     border-radius: 10%;
+}
+/*Estilo dos cartões */
+.cartao {
+    background-color: #e8f0fe;
+    padding: 8px;
+    border: 2px solid #3366cc;
+    margin: 0 auto 24px;
+    max-width: 500px;
+    width: 500px;
 }
