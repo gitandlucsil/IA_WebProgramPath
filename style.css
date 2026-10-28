@@ -7,7 +7,8 @@ body {
     background-color: #f4f4f9;
     color: #333333;
     text-align: left;
-    margin: 20px
+    margin: 20px;
+    line-height: 1.6;
 }
 /* Seletor por tag */
 h1 {
@@ -18,6 +19,8 @@ h2 {
     color: red;
 }
 p{
+    font-size: 16px;
+    margin-bottom: 12px;
     color: darkmagenta;
 }
 /* Seletor por classe */
@@ -35,15 +38,31 @@ p{
 }
 #rodape-principal {
     border-top: 2px solid #ccc;
+    display: inline-block;
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 20 px;
+    border-radius: 5px;
+}
+#rodape-principal a {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#rodape-principal:hover {
+    background-color: #1e8449;
 }
 #foto-perfil {
     border-radius: 10%;
 }
 /*Estilo dos cartões */
 .cartoes {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+    display: flex;      /* Ativa o Flexbox */
+    gap: 24px;          /* Espaço entre cartões */
+    flex-wrap: wrap;    /* Permite novas linhas */
     justify-content: center;
 }
 .cartao {
@@ -52,4 +71,15 @@ p{
     border: 2px solid #3366cc;
     max-width: 500px;
     width: 500px;
+}
+/*Estilização padrão de links*/
+a {
+    color: #0066cc;
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+}
+/*Estado quando o mouse passa por cima do link*/
+a:hover {
+    color: #004499;
+    text-decoration: underline;
 }
