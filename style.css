@@ -40,11 +40,16 @@ p{
     border-radius: 10%;
 }
 /*Estilo dos cartões */
+.cartoes {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .cartao {
     background-color: #e8f0fe;
     padding: 8px;
     border: 2px solid #3366cc;
-    margin: 0 auto 24px;
     max-width: 500px;
     width: 500px;
 }
