@@ -83,7 +83,7 @@ p{
 }
 .grade {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cria três colunas de mesma largura */
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas de mesma largura */
     gap: 24px; /* Espaço entre linhas e colunas */
 }
 .cartao {
@@ -112,4 +112,17 @@ a:hover {
 .secoes-flex section {
     flex: 1;
     min-width: 250px;
+}
+/* Tablets e telas médias */
+@media(max-width: 800px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celulares */
+@media(max-width: 500px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
 }
