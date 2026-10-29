@@ -104,3 +104,12 @@ a:hover {
     color: #004499;
     text-decoration: underline;
 }
+.secoes-flex {
+    display: flex;
+    gap: 20 px;
+    flex-wrap: wrap;
+}
+.secoes-flex section {
+    flex: 1;
+    min-width: 250px;
+}
