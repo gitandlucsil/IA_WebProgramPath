@@ -2,6 +2,22 @@
 * {
     box-sizing: border-box;
 }
+header {
+    display: flex;
+    justify-content: space-between; /* Afasta os itens para as extremidades */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+header nav ul {
+    display: flex;
+    gap: 15px;        /* Espaçamento entre os links */
+    list-style: none; /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -64,6 +80,11 @@ p{
     gap: 24px;          /* Espaço entre cartões */
     flex-wrap: wrap;    /* Permite novas linhas */
     justify-content: center;
+}
+.grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria três colunas de mesma largura */
+    gap: 24px; /* Espaço entre linhas e colunas */
 }
 .cartao {
     background-color: #e8f0fe;
