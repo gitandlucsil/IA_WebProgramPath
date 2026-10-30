@@ -113,16 +113,49 @@ a:hover {
     flex: 1;
     min-width: 250px;
 }
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 15px;
+}
+.card-projeto {
+    background-color: #f9f9f9;
+}
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #3366cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s; /* Suaviza a mudança visual */
+}
+.botao:hover { /* Quando o mouse passa sobre o botão*/
+    background-color: #1d408c;
+    color: white
+}
+.bota:focus-visible { /* Quando recebe foco, por exemplo, pelo teclado */
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+.botao:active { /* Equanto está sendo pressionado */
+    background-color: #142d61;
+}
 /* Tablets e telas médias */
 @media(max-width: 800px) {
     .grade {
         grid-template-columns: repeat(2, 1fr);
     }
+    .grid-projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }   
 }
-
 /* Celulares */
 @media(max-width: 500px) {
     .grade {
+        grid-template-columns: 1fr;
+    }
+    .grid-projetos {
         grid-template-columns: 1fr;
     }
 }
