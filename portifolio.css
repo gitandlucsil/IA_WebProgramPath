@@ -1,0 +1,70 @@
+/* Facilita o cálculo das dimensões */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: #2454a6;
+    text-decoration: none;
+}
+
+/* Interação visual e acessibilidade */
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cartao {
+    padding: 20px;
+    border: 2px solid #3366cc;
+    border-radius: 8px;
+    background-color: #e8f0fe;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 500px) {
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 16px;
+    }
+}
