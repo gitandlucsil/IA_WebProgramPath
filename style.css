@@ -159,3 +159,38 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* Estilo base do campo */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+/*Destaque quando o campo está ativo/focado */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+/* Botão de Envio */
+.btn-enviar {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #1e8449;
+}
