@@ -1,20 +1,12 @@
-const nome = "Meu portfólio"
-const linguagem = "JavaScript";
-const aula = 15;
-let aulasConcluidas = 14;
-const estaAprendendo = true;
-let proximaTecnologia;
+const metaAulas = 30;
+let aulasConcluidas = 15;
 
-console.log(nome);
-console.log(linguagem);
-console.log(aula);
-console.log(aulasConcluidas);
-console.log(estaAprendendo);
-console.log(proximaTecnologia);
+const aulasRestantes = metaAulas - aulasConcluidas;
+const percentual = (aulasConcluidas/metaAulas) * 100;
+const passouDaMetade = aulasConcluidas > metaAulas / 2;
+const concluiuCurso = aulasConcluidas === metaAulas;
 
-aulasConcluidas = aulasConcluidas + 1;
-console.log(aulasConcluidas);
-
-console.log(typeof(nome))
-console.log(typeof(linguagem))
-console.log(typeof(aula))
+console.log(`Faltam ${aulasRestantes} aulas.`);
+console.log(`Progresso: ${percentual}%`);
+console.log(`Passou da metade? ${passouDaMetade}`);
+console.log(`Concluiu o curso? ${concluiuCurso}`);
