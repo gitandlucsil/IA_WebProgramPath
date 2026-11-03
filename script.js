@@ -30,3 +30,10 @@ for (let i = 1; i<=10; i++)
         console.log(`${resultado} é par!`);
     }
 }
+
+const nomeDev = "André";
+const anoNascimento = 1991;
+const anoAtual = 2026;
+let idade = anoAtual - anoNascimento;
+let gostaDeJS = true;
+console.log(`Meu nome é ${nomeDev}, tenho ${idade} anos e meu interesse em Javascript é ${gostaDeJS}`);
