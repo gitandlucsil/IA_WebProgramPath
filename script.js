@@ -18,3 +18,15 @@ if (percentual == 100) {
 } else {
     console.log("Vamos começar a estudar?");
 }
+
+let valor = 3;
+let resultado = 0;
+for (let i = 1; i<=10; i++)
+{
+    resultado = valor*i;
+    console.log(`${valor} x ${i} = ${resultado}`);
+    if (resultado % 2 == 0)
+    {
+        console.log(`${resultado} é par!`);
+    }
+}
