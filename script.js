@@ -37,3 +37,32 @@ const anoAtual = 2026;
 let idade = anoAtual - anoNascimento;
 let gostaDeJS = true;
 console.log(`Meu nome é ${nomeDev}, tenho ${idade} anos e meu interesse em Javascript é ${gostaDeJS}`);
+
+function calcularProgresso(concluidas, total, caseDecimais) {
+    if (total <= 0) {
+        return 0;
+    }
+    return ((concluidas/total) * 100).toFixed(caseDecimais);
+}
+
+function calcularMedia(n1, n2, n3)
+{
+    let media = ((n1 + n2 + n3)/3).toFixed(2);
+    console.log(`Média das notas: ${media}`);
+    if (media >= 7) {
+        console.log(`Aluno aprovado!`);
+    } else {
+        console.log(`Aluno reprovado!`);
+    }
+    
+}
+
+//const progressoHTML = calcularProgresso(7, 7, 1);
+//const progressoCSS = calcularProgresso(5, 7, 1);
+
+//console.log(`HTML: ${progressoHTML}%`);
+//console.log(`CSS: ${progressoCSS}%`);
+
+calcularMedia(5, 5, 5);
+calcularMedia(6, 8, 8);
+calcularMedia(6, 5, 5);
