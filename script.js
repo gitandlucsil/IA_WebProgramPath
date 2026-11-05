@@ -54,7 +54,20 @@ function calcularMedia(n1, n2, n3)
     } else {
         console.log(`Aluno reprovado!`);
     }
-    
+}
+
+const calcularMediaArrow = (n1, n2, n3) => {
+    let media = ((n1 + n2 + n3)/3).toFixed(2);
+    let status = "reprovado";
+    //console.log(`Média das notas: ${media}`);
+    if (media >= 7.0) {
+        status = "aprovado";
+    } 
+    formatarMensagem("André", status, media);
+}
+
+const formatarMensagem = (nome, status, média) => {
+    console.log(`O aluno ${nome}, foi ${status} com a média ${média}`);
 }
 
 //const progressoHTML = calcularProgresso(7, 7, 1);
@@ -63,6 +76,6 @@ function calcularMedia(n1, n2, n3)
 //console.log(`HTML: ${progressoHTML}%`);
 //console.log(`CSS: ${progressoCSS}%`);
 
-calcularMedia(5, 5, 5);
-calcularMedia(6, 8, 8);
-calcularMedia(6, 5, 5);
+calcularMediaArrow(5, 5, 5);
+calcularMediaArrow(6, 8, 8);
+calcularMediaArrow(6, 5, 5);
