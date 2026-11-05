@@ -79,3 +79,13 @@ const formatarMensagem = (nome, status, média) => {
 calcularMediaArrow(5, 5, 5);
 calcularMediaArrow(6, 8, 8);
 calcularMediaArrow(6, 5, 5);
+
+const assuntos = ["HTML", "CSS", "Javascript"];
+assuntos.push("Flexbox");
+assuntos.push("Grid");
+console.log(assuntos.includes("Javascript"));
+assuntos.forEach(function(assunto, indice) {
+    console.log(`${indice}: ${assunto}`);
+});
+assuntos.pop();
+console.log(assuntos);
