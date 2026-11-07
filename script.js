@@ -1,4 +1,4 @@
-const metaAulas = 30;
+/*const metaAulas = 30;
 let aulasConcluidas = 17;
 
 const aulasRestantes = metaAulas - aulasConcluidas;
@@ -107,4 +107,18 @@ projeto.tecnologias.forEach(function(tecnologia) {
 });
 projeto["tecnologias"].forEach(function(tecnologia) {
     console.log(tecnologia)
-});
+});*/
+
+// Selecionando elementos individuais com querySelector
+const tituloPrincipal = document.querySelector("header h1");
+const fotoPerfil = document.querySelector("#foto-perfil");
+const primeiroCard = document.querySelector(".card-projeto");
+
+// Selecionando múltiplos elementos com querySelectorAll
+const linksHeader = document.querySelectorAll("header nav ul li a");
+
+// Imprimindo os elementos no console para inspeção
+console.log("Título Principal:", tituloPrincipal);
+console.log("Foto de Perfil:", fotoPerfil);
+console.log("Primeiro Card:", primeiroCard);
+console.log("Lista de Links do Header:", linksHeader);
