@@ -89,3 +89,22 @@ assuntos.forEach(function(assunto, indice) {
 });
 assuntos.pop();
 console.log(assuntos);
+
+const projeto = {
+    nome: "Site para Web",
+    descricao: "Aulas para treinamento e aprendizado de programação web",
+    tecnologias: ["JS", "HTML", "CSS"],
+    concluido: false
+}
+
+console.log(`Nome do curso ${projeto.nome} e descrição ${projeto.descricao}`);
+projeto.tecnologias.push("React");
+projeto.concluido = true;
+console.log(projeto)
+
+projeto.tecnologias.forEach(function(tecnologia) {
+    console.log(tecnologia)
+});
+projeto["tecnologias"].forEach(function(tecnologia) {
+    console.log(tecnologia)
+});
