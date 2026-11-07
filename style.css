@@ -194,3 +194,8 @@ textarea:focus {
 .btn-enviar:hover {
     background-color: #1e8449;
 }
+
+.card-destaque {
+    border: 2px solid #27ae60;
+    background-color: #eadaf1;
+}

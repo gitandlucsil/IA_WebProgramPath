@@ -122,3 +122,10 @@ console.log("Título Principal:", tituloPrincipal);
 console.log("Foto de Perfil:", fotoPerfil);
 console.log("Primeiro Card:", primeiroCard);
 console.log("Lista de Links do Header:", linksHeader);
+
+tituloPrincipal.textContent = "Portfólio interativo da Web";
+primeiroCard.classList.add("card-destaque");
+const primeiroCardText = primeiroCard.querySelector("p");
+primeiroCardText.textContent = "Este projeto teve seu texto atualizado dinamicamente com JavaScript!";
+//tituloPrincipal.style.color = "#27ae60";
+//tituloPrincipal.classList.add("destaque-titulo")
