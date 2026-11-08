@@ -129,3 +129,18 @@ const primeiroCardText = primeiroCard.querySelector("p");
 primeiroCardText.textContent = "Este projeto teve seu texto atualizado dinamicamente com JavaScript!";
 //tituloPrincipal.style.color = "#27ae60";
 //tituloPrincipal.classList.add("destaque-titulo")
+
+const botao = document.querySelector("#btn-tema");
+//Escutando o clique no botão
+botao.addEventListener("click", () => {
+    document.body.classList.toggle("modo-escuro")
+});
+botao.addEventListener("mouseover", () => {
+    console.log("botao mouseover!");
+});
+botao.addEventListener("keyup", () => {
+    console.log("botao keyup!");
+});
+botao.addEventListener("submit", () => {
+    console.log("botao submit!");
+});
