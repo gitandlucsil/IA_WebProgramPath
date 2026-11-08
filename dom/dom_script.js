@@ -8,6 +8,7 @@ const projeto = {
 const titulo = document.querySelector("#titulo");
 const descricao = document.querySelector("#descricao");
 const lista = document.querySelector("#lista-tecnologias");
+const botao_tecnologias = document.querySelector("#btn-tecnologias");
 //Insere os dados do objeto na página
 titulo.textContent = projeto.nome;
 descricao.textContent = projeto.descricao;
@@ -22,3 +23,13 @@ projeto.tecnologias.forEach(function(tecnologia){
 });
 //Adiciona uma classe CSS ao titulo
 titulo.classList.add("destaque");
+
+botao_tecnologias.addEventListener("click", function() {
+    lista.hidden = !lista.hidden;
+    console.log(lista.hidden);
+    if (lista.hidden) {
+        botao_tecnologias.textContent = "Mostrar tecnologias";
+    } else {
+        botao_tecnologias.textContent = "Ocultar tecnologias";
+    }
+});
