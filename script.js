@@ -144,3 +144,10 @@ botao.addEventListener("keyup", () => {
 botao.addEventListener("submit", () => {
     console.log("botao submit!");
 });
+
+const meusObjetivos = ["Dominar o DOM", "Criar um projeto prático", "Aprender APIs", "Publicar o portfolio"];
+const listaObjetivos = document.querySelector("#lista-objetivos");
+listaObjetivos.innerHTML = "";
+meusObjetivos.forEach(function(objetivo){
+    listaObjetivos.innerHTML += `<li>${objetivo}</li>`;
+});
