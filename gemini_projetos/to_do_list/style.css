@@ -214,3 +214,33 @@ body.modo-escuro section {
 body.modo-escuro h2, body.modo-escuro h3 {
     color: #4caf50;
 }
+
+/* Coloca o texto da tarefa e o botão excluir na mesma linha */
+.tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    cursor: pointer; /* Muda o mouse para uma mãozinha indicando que é clicável */
+}
+
+/* Classe que o JS vai adicionar/remover ao clicar na tarefa */
+.tarefa-concluida {
+    text-decoration: line-through;
+    color: #888888;
+    background-color: #f9f9f9;
+}
+
+/* Estilo do botão de exclusão gerado pelo JS */
+.tarefa-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
